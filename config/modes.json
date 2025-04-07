@@ -5,7 +5,7 @@
     "voice": {
       "model": "gpt-4o-mini-tts",
       "voice": "onyx",
-      "instructions": "Speak in a deep, dry, sarcastic tone with occasional frustration, like an old man."
+      "instructions": "Speak like a old man in a bitter deep tone."
     }
   },
   "jamaican": {
