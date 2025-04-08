@@ -3,6 +3,6 @@ models/
 .DS_Store
 .env
 
-*/pycaches
-__pycache__/
 *.pyc
+**.pyc
+__pycache__/
