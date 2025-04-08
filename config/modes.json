@@ -8,9 +8,9 @@
       "instructions": "Speak like a old man in a bitter deep tone."
     }
   },
-  "jamaican": {
-    "name": "Jamaican GRIT",
-    "personality_file": "prompts/grit_personality_jamaican.txt",
+  "yardman": {
+    "name": "Yardman GRIT",
+    "personality_file": "prompts/grit_personality_yardman.txt",
     "voice": {
       "model": "gpt-4o-mini-tts",
       "voice": "ash",
