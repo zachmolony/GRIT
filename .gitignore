@@ -4,5 +4,8 @@ models/
 .env
 
 *.pyc
-**.pyc
+**/**/.pyc
 __pycache__/
+anatomy/__pycache__/** */
+
+
