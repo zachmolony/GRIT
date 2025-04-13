@@ -136,7 +136,7 @@ def listen_for_command(wake_word, timeout=3.0, silence_limit=1.0):
     print(f"Final command collected: '{full_command}'")
     return full_command
 
-def listen_for_command(timeout=3.0, silence_limit=1.0):
+def listen_for_command(timeout=3.0, silence_limit=0.3):
     """
     Listen for additional speech after wake word detection
     

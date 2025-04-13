@@ -55,11 +55,9 @@ def main():
                 if text:
                     print(f"Recognized: {text}")
                     
-                    # Check if wake word is in the text
                     if WAKE_WORD in text.lower():
                         print(f"Wake word '{WAKE_WORD}' detected!")
                         
-                        # Extract the initial command from the same text that contained the wake word
                         initial_command = text.lower().replace(WAKE_WORD, "").strip()
                         print(f"Initial command part: '{initial_command}'")
                         
@@ -80,7 +78,6 @@ def main():
                             print("No command detected after wake word.")
                             continue
 
-                        # Process the command
                         handled, response = resolve_command_locally(command)
                         if handled:
                             print(f"Local command handled: {response}")
@@ -91,13 +88,10 @@ def main():
                             # Cleanup before speaking to prevent resource conflicts
                             cleanup_speech_recognition()
                             
-                            # Now speak the response
                             speak(response)
                             
-                            # Add a small delay before reinitializing
                             time.sleep(0.5)
                             
-                            # Reinitialize speech recognition
                             initialize_speech_recognition()
                             continue  # Skip the rest of the loop and start listening again
                             
